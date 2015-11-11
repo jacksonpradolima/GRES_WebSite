@@ -1,0 +1,174 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MOA4PLA - About</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Begin Template Header -->
+
+        <div id='headerTemplate'>
+
+        </div>
+
+        <!-- End Template Header -->
+        <!-- Begin Content -->
+
+        <div class="container">
+            <div class="page-header">
+                <h1 id='top' class="anchor" style="font-size: 26pt">About MOA4PLA</h1>
+                <p>This page describes the Multi-Objective Optimization Approach for PLA Design (MOA4PLA). All the information provided in this page were extracted from our <a href="./works.html">works</a>.</p>
+                <p>In this page you will find:</p>
+                <ol>
+                    <li>
+                        <a href="#what">What is MOA4PLA?</a>
+                    </li>
+                    <li>
+                        <a href="#how">How does it work?</a>
+                    </li>
+                    <li>
+                        <a href="#implementation">How MOA4PLA was implemented?</a>
+                    </li>
+                    <li>
+                        <a href="#benefits">What are the benefits of MOA4PLA?</a>
+                    </li>
+                    <li>
+                        <a href="#moreinfo">I need more information. Where can I find it?</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="container" style="text-align: justify">
+            <h3 class='anchor' id='what'>
+                <a href="#top" title="Back to Top"><i class="fa fa-angle-double-up"></i></a>
+                What is MOA4PLA?
+            </h3>
+            <p>
+                The Multi-Objective Optimization Approach for PLA design (MOA4PLA) [Colanzi et al., 2014], as the name says, is an approach to optimize Product Line Architectures (PLAs) design using multi-objective algorithms.
+                MOA4PLA receives a PLA modeled in a UML class diagram containing all commonalities and variabilities, and optimize it while being guided by an evaluation model composed by software metrics.
+                At the end of the optimization process, a set of solutions with the best trade-off between objectives is generated and the architect may select which architecture will be used.
+            </p>
+            <hr>
+            <h3 class='anchor' id='how'>
+                <a href="#top" title="Back to Top"><i class="fa fa-angle-double-up"></i></a>
+                How does it work?
+            </h3>
+            <p>
+                The approach uses traditional mutation operators, as well as feature-driven mutation and crossover operators to modularize features.
+                The activities of MOA4PLA are shown in Figure 1 and detailed next.
+            </p>
+            <div style="text-align: center; margin: 20px">
+                Figure 1. MOA4PLA activities
+                <br/>
+                <img src="img/moa4pla.png" width="500" alt="MOA4PLA Activities">
+            </div>
+            <p>
+                The first activity is the <i>Construction of the PLA Representation</i>.
+                This activity has as input the PLA architecture designed in a class diagram.
+                From this input a representation is generated according to the metamodel presented in Figure 2 [Colanzi and Vergilio, 2013].
+            </p>
+            <div style="text-align: center; margin: 20px">
+                Figure 2. Metamodel representation of the PLA
+                <br/>
+                <img src="img/representation.png" width="500" alt="PLA Representation">
+            </div>
+            <p>
+                The metamodel has all conventional elements of a class diagram (class, interface, method, attributes, etc.) and also SPL specific elements (variability, variation point, variant, etc.).
+                Each element is associated to the SPL features (represented by stereotypes) that it realizes.
+                A variable element is associated to a variability which has a variation point and variants.
+            </p>
+            <p>
+                In the second activity, <i>Definition of the Evaluation Model</i>, the architect defines which metrics will be used to guide the optimization process in order to fulfill his/her purposes.
+                These metrics are used as fitness functions in the multi-objective optimization.
+            </p>
+            <p>
+                The third activity is the <i>Multi-Objective Optimization</i>.
+                In this activity, the PLA representation and the evaluation model obtained in the previous activities are used to optimize the PLA design using a multi-objective algorithm selected by the architect.
+                In this activity the architect may inform if there is any constraint, such as discarding solutions containing interfaces without operations or relationships.
+                During the optimization process the search operators are used to generate PLA alternatives.
+            <p>
+                Finally, in the last activity (<i>Transformation and Selection</i>), the best PLA representations are converted to UML class diagrams in order to be readable by the architect. After this, the architect can select the one which better fits his/her organizational goals and use it as the architecture of the SPL.
+            </p>
+            <hr>
+            <h3 class='anchor' id='implementation'>
+                <a href="#top" title="Back to Top"><i class="fa fa-angle-double-up"></i></a>
+                How MOA4PLA was implemented?
+            </h3>
+            <p>
+                In fact, MOA4PLA is automatized by the OPLA-Tool [Colanzi, 2014].
+                This tool was implemented as an extension of the <a href="http://jmetal.sourceforge.net/">jMetal framework</a>.
+                The OPLA-Tool modules are presented in Figure 3 and described next.
+            </p>
+            <div style="text-align: center; margin: 20px">
+                Figure 3. OPLA-Tool modules
+                <br/>
+                <img src="img/oplatool.png" width="500" alt="OPLA Tool">
+            </div>
+            <p>
+                The OPLA-GUI module [Féderle, 2014] is the graphical interface for the interaction with the architect. This module allows the architect to chose which algorithm must be used, the metrics for the generation of the evaluation model and the search-based operators. Besides that, it allows the definition of which PLA will be used as input for the optimization process and the visualization of the generated results.
+            </p>
+            <p>
+                To allow that, the OPLA-GUI module uses services provided by the OPLA-Encoding, OPLA-Decoding and OPLA-Core modules [Féderle, 2014]. The OPLA-Encoding module receives a PLA modeled as a class diagram and converts it to a representation according to the metamodel presented in Figure 2. This representation is manipulated by the OPLA-Core module, which executes the optimization algorithm and returns to the architect a set of PLAs with the best trade-off between the objectives. These PLAs representations are then decodified by the OPLA-Decoding module, which transforms this representation into a class diagram for a better visualization.
+            </p>
+            <p>
+                The OPLA-Patterns module [Guizzo, 2014] and the OPLA-ArchStyles module [Mariani, 2015] have as objective, respectively, the application of design patterns and the preservation of architectural styles in order to improve the optimized PLA designs.
+            </p>
+            <hr>
+            <h3 class='anchor' id="benefits">
+                <a href="#top" title="Back to Top"><i class="fa fa-angle-double-up"></i></a>
+                What are the benefits of MOA4PLA?
+            </h3>
+            <p>
+                MOA4PLA improves the design of PLAs using a evaluation model given by the architect. In addition, this optimization is totally automatic, easing the burden of architecture optimization and reducing human effort. This implies in an automatic optimization of PLA design without discarding the needs of the architect.
+            </p>
+            <p>
+                According to empirical evaluations [Colanzi et al., 2014; Guizzo et al., 2014; Féderle, 2014; Mariani, 2014], the PLA designs obtained by the MOA4PLA optimization have the best trade-offs between the considered objectives and overall good quality. Current works are investigating the other benefits of MOA4PLA and addressing new research areas to improve even more the results of the approach.
+            </p>
+            <hr>
+            <h3 class='anchor' id='moreinfo'>
+                <a href="#top" title="Back to Top"><i class="fa fa-angle-double-up"></i></a>
+                I need more information. Where can I find it?
+            </h3>
+            <p>
+                Please visit the <a href="works.html">"Works" section</a> in which the works related to this approach are listed.
+            </p>
+        </div>
+
+        <!-- End Content -->
+        <!-- Begin Template Footer -->
+
+        <div id='footerTemplate'>
+
+        </div>
+
+        <!-- End Template Footer -->
+        <script src="js/vendor/jquery-1.11.2.js"></script>
+        <script>
+            $(function () {
+                $("#headerTemplate").load("header.html");
+                $("#footerTemplate").load("footer.html");
+            });
+        </script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
