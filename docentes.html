@@ -105,49 +105,7 @@
                                         </ul>
                                     </header>  
                                     <!-- Timeline de http://bootsnipp.com/snippets/featured/timeline-single-column -->
-                                    <div class="message-item">
-                                        <div class="message-inner">
-                                            <div class="message-head clearfix">
-                                                <div class="avatar pull-left"><img src="team/silvia.gif" class="img-thumbnail img-responsive"></div>
-                                                <div class="user-detail">
-                                                    <h5 class="handle">Silvia Regina Vergilio</h5>                                                    
-                                                    <div class="post-meta">
-                                                        <div class="asker-meta">
-                                                            <span class="qa-message-what">Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 - CA CC - Ciências da Computação</span>                                                                                
-                                                            <br />                                                            
-                                                        </div>
-                                                        <span class="qa-message-who">                                                                                        
-                                                            <span class="qa-message-who-data"><a href=" http://lattes.cnpq.br/0401470121643212" target="_blank"><img src="images/lattes2.png" alt="Lattes" border="0"></a></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="qa-message-content">
-                                                    Possui graduação em Bacharelado em Ciencias da Computacao pela Universidade de São Paulo (1988), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1992) e doutorado em Engenharia Elétrica pela Universidade Estadual de Campinas (1997). Atualmente é professora Titular da Universidade Federal do Paraná. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: teste de software, teste de linha de produto de sofwtare, otimização multi-objetivo, engenharia de software baseada em busca.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="message-item">
-                                        <div class="message-inner">
-                                            <div class="message-head clearfix">
-                                                <div class="avatar pull-left"><img src="team/aurora.gif" class="img-thumbnail img-responsive"></div>
-                                                <div class="user-detail">
-                                                    <h5 class="handle">Aurora Trinidad Ramirez Pozo</h5>                                                    
-                                                    <div class="post-meta">
-                                                        <div class="asker-meta">
-                                                            <span class="qa-message-what">Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 - CA CC - Ciências da Computação</span>                                                                                
-                                                            <br />                                                            
-                                                        </div>
-                                                        <span class="qa-message-who">                                                                                        
-                                                            <span class="qa-message-who-data"><a href="http://lattes.cnpq.br/2815946827655352" target="_blank"><img src="images/lattes2.png" alt="Lattes" border="0"></a></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="qa-message-content">
-                                                    Possui graduação em Engenharia Elétrica - Universidad de Concepcion (1985), mestrado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1991) e doutorado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1996). Atualmente é associado IV da Universidade Federal do Paraná (desde 1997). Tem experiência na área de Ciência da Computação, com ênfase em Inteligência Computacional, atuando principalmente nos seguintes temas: Inteligência Coletiva (Computação Evolutiva, Enxame de Partícula, etc..) e aplicações em Engenharia de Software e Mineração de Dados.
-                                            </div>
-                                        </div>
+                                    <div id="results_team">                                                                                
                                     </div>
                                 </article>
                             </div><!--/row-->
@@ -186,7 +144,8 @@
             <!-- ./ Footer -->
         </div>
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!--<script src="assets/js/jquery.min.js"></script>-->
+        <script src="assets/js/jquery-2.1.4.js"></script>
         <script src="assets/js/jquery.dropotron.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
         <script src="assets/js/skel-viewport.min.js"></script>
@@ -194,6 +153,13 @@
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
         <script src="assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>   
+        <script src="assets/js/jquery.blockui.min.js"></script>   
+        <script src="assets/js/site.core.js"></script>   
+        <script type="text/javascript">
+            $(function(){
+                $(document).writeTeam("results_team", "content/docentes.json");
+            });            
+        </script>
         <!-- ./ Scripts -->
     </body>
 </html>

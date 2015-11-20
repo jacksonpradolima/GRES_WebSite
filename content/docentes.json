@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Silvia Regina Vergilio", 
+        "image": "team/silvia.gif",
+        "detail": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 - CA CC - Ciências da Computação",
+        "lattes": "http://lattes.cnpq.br/0401470121643212",
+        "description": "Possui graduação em Bacharelado em Ciencias da Computacao pela Universidade de São Paulo (1988), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1992) e doutorado em Engenharia Elétrica pela Universidade Estadual de Campinas (1997). Atualmente é professora Titular da Universidade Federal do Paraná. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: teste de software, teste de linha de produto de sofwtare, otimização multi-objetivo, engenharia de software baseada em busca."
+    },
+    {
+	"name": "Aurora Trinidad Ramirez Pozo", 
+        "image": "team/aurora.gif",
+        "detail": "Bolsista de Produtividade em Pesquisa do CNPq - Nível 2 - CA CC - Ciências da Computação",
+        "lattes": "http://lattes.cnpq.br/2815946827655352",
+        "description": "Possui graduação em Engenharia Elétrica - Universidad de Concepcion (1985), mestrado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1991) e doutorado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1996). Atualmente é associado IV da Universidade Federal do Paraná (desde 1997). Tem experiência na área de Ciência da Computação, com ênfase em Inteligência Computacional, atuando principalmente nos seguintes temas: Inteligência Coletiva (Computação Evolutiva, Enxame de Partícula, etc..) e aplicações em Engenharia de Software e Mineração de Dados."
+    }
+]
