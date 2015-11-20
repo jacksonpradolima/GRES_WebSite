@@ -6,7 +6,7 @@
 -->
 <html>
     <head>
-        <title>GrES - UFPR | Equipe</title>
+        <title>GrES - UFPR | Equipe | Doutorados Concluídos</title>
         <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
         <link rel="icon" href="favicon.ico"  type="image/x-icon" />
         
@@ -54,8 +54,8 @@
                             <li>
                                 <a href="#">Pós-Doutorados</a>
                                 <ul>
-                                    <li><a href="#">Em Andamento</a></li>
-                                    <li><a href="#">Concluídos</a></li>                                            
+                                    <li><a href="pos_doutorados.html">Em Andamento</a></li>
+                                    <li><a href="pos_doutorados_concluidos.html">Concluídos</a></li>                                            
                                 </ul>
                             </li>                                                                                          
                             <li>
@@ -69,11 +69,11 @@
                                 <a href="#">Mestrados</a>
                                 <ul>
                                     <li><a href="mestrados.html">Em Andamento</a></li>
-                                    <li><a href="#">Concluídos</a></li>                                            
+                                    <li><a href="mestrados_concluidos.html">Concluídos</a></li>                                            
                                 </ul>
                             </li>  
-                            <li><a href="#">Graduação</a></li>                            
-                            <li><a href="#">Iniciação Científica</a></li>
+                            <li><a href="graduacao.html">Graduação</a></li>                            
+                            <li><a href="iniciacao_cientifica.html">Iniciação Científica</a></li>
                         </ul>
                     </li>
                     <li>
@@ -156,8 +156,8 @@
         <script src="assets/js/jquery.blockui.min.js"></script>   
         <script src="assets/js/site.core.js"></script>   
         <script type="text/javascript">
-            $(function(){
-                $(document).writeTeam("results_team", "content/team/doutorados_concluidos.json");
+            $(function(){                
+                $(document).writeTeam({ id: "results_team", file: "content/team/doutorados_concluidos.json", sortBy: "detail", reverse: true });
             });            
         </script>
         <!-- ./ Scripts -->
