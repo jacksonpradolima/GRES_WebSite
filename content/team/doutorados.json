@@ -1,28 +1,28 @@
 [
     {
         "name": "Wesley Klewerton Guez Assunção", 
-        "image": "team/wesley_new.jpg",
+        "image": "images/team/wesley_new.jpg",
         "detail": "Ingresso 2012-2",
         "lattes": "http://lattes.cnpq.br/2841032013026879",
         "description": ""
     },
     {
 	"name": "Giovani Guizzo", 
-        "image": "team/giovani.png",
+        "image": "images/team/giovani.png",
         "detail": "Ingresso 2014-2",
         "lattes": "http://lattes.cnpq.br/7715481346852005",
         "description": ""
     },
     {
 	"name": "Thainá Mariani", 
-        "image": "team/mulher.gif",
+        "image": "images/team/mulher.gif",
         "detail": "Ingresso 2015-1",
         "lattes": "http://lattes.cnpq.br/0564933529322298",
         "description": "Doutoranda em Informática pela Universidade Federal do Paraná (UFPR). Mestre em Informática pela Universidade Federal do Paraná (UFPR) e graduada em Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Tecnológica Federal do Paraná (UTFPR). Possui experiência e interesse na área de Engenharia de Software e Inteligência Artificial, com foco em Engenharia de Software Baseada em Busca."
     },
     {
 	"name": "Thiago Nascimento Ferreira", 
-        "image": "team/homem.gif",
+        "image": "images/team/homem.gif",
         "detail": "Ingresso 2015-1",
         "lattes": "",
         "description": ""
