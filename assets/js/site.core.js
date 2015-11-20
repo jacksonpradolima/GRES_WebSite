@@ -111,10 +111,16 @@ $(function () {
                                             "<div class='asker-meta'>"+
                                                 "<span class='qa-message-what'>" + item.detail + "</span>"+
                                                 "<br />"+
-                                            "</div>"+
-                                            "<span class='qa-message-who'>"+
-                                                "<span class='qa-message-who-data'><a href='"+ item.lattes + "' target='_blank'><img src='images/lattes2.png' alt='Lattes' border='0'></a></span>"+
-                                            "</span>"+
+                                            "</div>";
+                                                    
+                                            if( item.lattes!= "")
+                                            {
+                                                html = html + 
+                                                "<span class='qa-message-who'>"+
+                                                    "<span class='qa-message-who-data'><a href='"+ item.lattes + "' target='_blank'><img src='images/lattes2.png' alt='Lattes' border='0'></a></span>"+
+                                                "</span>";
+                                            }
+                html = html + 
                                         "</div>"+
                                     "</div>"+
                                 "</div>"+
