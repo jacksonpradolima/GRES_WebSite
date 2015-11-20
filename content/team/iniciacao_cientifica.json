@@ -1,0 +1,79 @@
+[    
+    {
+        "name": "Ernani Willemberg Ribeiro", 
+        "image": "images/team/homem.gif",
+        "detail": "2009",
+        "lattes": "",
+        "description": "Geração de dados de teste utilizando algoritmos multiobjetivo."
+    },
+    {
+        "name": "Talita Alcantara Demichelli", 
+        "image": "images/team/mulher.gif",
+        "detail": "2008",
+        "lattes": "",
+        "description": "Um algorithmo evolutivo de geração de dados de teste."
+    },
+    {
+        "name": "Aldo Monteiro do Nascimento", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Avaliacão de Critérios de Teste Estrutural em Ambientes de Passagem de Mensagem."
+    },
+    {
+        "name": "Augusto A. P. G. Torácio", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Definição e Implementação de um Módulo de Suorte à Aplicação de Critérios de Teste em Ambientes de Passagem de Mensagens."
+    },
+    {
+        "name": "Eric Pereira Brobouski", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Defincão e Implementacão de um módulo de auxílio à manutencao de casos de teste."
+    },
+    {
+        "name": "Ana Paula Costacurta", 
+        "image": "images/team/mulher.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Auxílio à Documentação e Integração dos Módulos da Ferramenta ValiPVM."
+    },
+    {
+        "name": "Ricardo N. Acras", 
+        "image": "images/team/homem.gif",
+        "detail": "2003",
+        "lattes": "",
+        "description": "Utilizando o Conceito de Evolução para Realizar o Teste de Especificações."
+    },
+    {
+        "name": "Fernanda Li Minku", 
+        "image": "images/team/mulher.gif",
+        "detail": "2002",
+        "lattes": "",
+        "description": "Utilizando Conceitos de Evolução para Realizar o Teste de Software."
+    },
+    {
+        "name": "Leticia Mara Peres", 
+        "image": "images/team/mulher.gif",
+        "detail": "1994",
+        "lattes": "",
+        "description": "Estudo de Estratégias para Geração de Dados de Teste."
+    },
+    {
+        "name": "Roberval Machado Cristino", 
+        "image": "images/team/homem.gif",
+        "detail": "1994",
+        "lattes": "",
+        "description": "Estudo sobre a Lineridade de Predicados Encontrados em Caminhos Durante o Teste Estrutural de Programas."
+    },
+    {
+        "name": "Marcelo Bernardes", 
+        "image": "images/team/homem.gif",
+        "detail": "1992",
+        "lattes": "",
+        "description": "Implementação de Rotinas para Apoiar a Geração de Dados de Teste."
+    }
+]

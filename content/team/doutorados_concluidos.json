@@ -2,8 +2,15 @@
     {
         "name": "Thelma Elita Colanzi", 
         "image": "images/team/thelma.gif",
-        "detail": "Ingresso 2010-1",
+        "detail": "2014",
         "lattes": "http://buscatextual.cnpq.br/buscatextual/visualizacv.jsp?id=K4770338H7",
         "description": ""
+    },
+    {
+        "name": "Maria Cláudia F. P. Emer", 
+        "image": "images/team/mulher.gif",
+        "detail": "2007",
+        "lattes": "",
+        "description": "Teste de Esquemas Através de Análise de Instâncias Alternativas."
     }
 ]

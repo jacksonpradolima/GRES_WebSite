@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Fábio Alves Neves <br/> Felipe Oliveira Bittencourt", 
+        "image": "images/team/homem.gif",
+        "detail": "2009",
+        "lattes": "",
+        "description": "Teste de Aplicações Web Baseado em Mutações de Máquinas de Estado."
+    },
+    {
+        "name": "Yves Cooper Furusho", 
+        "image": "images/team/homem.gif",
+        "detail": "2008",
+        "lattes": "",
+        "description": "Utilizando Algoritmos de Aprendizado de Máquina para gera modelos Preditivos a partir de Métricas de Software."
+    },
+    {
+        "name": "Guilherme A. Bill <br /> Rodolpho M. Carmo", 
+        "image": "images/team/homem.gif",
+        "detail": "2007",
+        "lattes": "",
+        "description": "Desenvolvimento de Aplicaçãoes Web com UML: Um Estudo de Caso para uma Aplicação em Pizzarias."
+    },
+    {
+        "name": "Paulo V. Caxeiro", 
+        "image": "images/team/homem.gif",
+        "detail": "2007",
+        "lattes": "",
+        "description": "Utilizando uma Abordagem Baseada em Defeitos para o Teste de Esquemas de Bases de Dados: Resultados de um Estudo com a Ferramenta XTool."
+    },
+    {
+        "name": "Daniel Bitencourt <br /> Rafael Kaminenko", 
+        "image": "images/team/homem.gif",
+        "detail": "2007",
+        "lattes": "",
+        "description": "Painel de Controle para Hospedagem de Sites na Internet"
+    },
+    {
+        "name": "Fabrício Resende de Souza", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Avaliação da Qualidade de um Software Industrial."
+    },
+    {
+        "name": "Renato Suga", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Análise de Mutantes e XML."
+    },
+    {
+        "name": "Gustavo K. Poll <br /> Paulo N. Cruz Filho", 
+        "image": "images/team/homem.gif",
+        "detail": "2004",
+        "lattes": "",
+        "description": "Padrões de Projeto."
+    },
+    {
+        "name": "Ricardo N. Acras", 
+        "image": "images/team/homem.gif",
+        "detail": "2003",
+        "lattes": "",
+        "description": "Splinter: Uma Ferramenta de Programação Evolucionária."
+    },
+    {
+        "name": "Leandro H. Nakamura <br /> Marcos A. Carrero", 
+        "image": "images/team/homem.gif",
+        "detail": "2002",
+        "lattes": "",
+        "description": "Um módulo de Instrumentação de Programas para Auxiliar o Teste Baseado em Predicados."
+    },
+    {
+        "name": "Euler F. Silva <br /> Gethe G. Junior", 
+        "image": "images/team/homem.gif",
+        "detail": "2002",
+        "lattes": "",
+        "description": "Mogere: Módulo Gerador de Restrições para Automatizar o Teste Baseado em Predicados."
+    },
+    {
+        "name": "Evandro N. Regolin <br /> Elisa K. Tanaka", 
+        "image": "images/team/homem.gif",
+        "detail": "2001",
+        "lattes": "",
+        "description": "Desenvolvimento de Sistema de Matrícula On-Line."
+    },
+    {
+        "name": "Alexandre H. de Maria <br /> Marcela L.Otto <br /> Misael A.Bortolaz", 
+        "image": "images/team/homem.gif",
+        "detail": "2001",
+        "lattes": "",
+        "description": "Utilização de Algoritmos Genéticos para Facilitar a Automação de Critérios de Teste."
+    },
+    {
+        "name": "Marilda Gnatta Daluche  <br /> Nadia P. Kozievitch", 
+        "image": "images/team/mulher.gif",
+        "detail": "1999",
+        "lattes": "",
+        "description": "Implementação de um Protótipo de Datawarehouse para o SAU5."
+    },
+    {
+        "name": "Jupiara L. Jordani  <br /> Rosana P. Pierin <br /> Silmara C. Teixeira", 
+        "image": "images/team/mulher.gif",
+        "detail": "1998",
+        "lattes": "",
+        "description": "Ferramenta para Estimativa de Custo e Cronograma Baseado no Modelo COCOMO."
+    }    
+]
