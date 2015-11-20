@@ -1,18 +1,4 @@
-$(function () { 
-    
-    var sort_by = function(field, reverse, primer){
-
-        var key = primer ? 
-            function(x) {return primer(x[field])} : 
-            function(x) {return x[field]};
-
-        reverse = !reverse ? 1 : -1;
-
-        return function (a, b) {
-            return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
-        } 
-    }
-
+$(function () {         
     $.fn.blockUI = function (options) {
         options = $.extend(true, {}, options);
         var html = '';
@@ -85,53 +71,69 @@ $(function () {
         }, timeout);
     }
     
-    $.fn.writeTeam = function (id, fileName) {
-        /// <summary>Realiza a criação de chart via JSON</summary>
-        /// <param name="chart" type="HighCharts">Chart</param>
-        /// <param name="url" type="String">Url da requisição das séries</param>
+    var sort_by = function(field, reverse, primer){
+
+        var key = primer ? 
+            function(x) {return primer(x[field])} : 
+            function(x) {return x[field]};
+
+        reverse = !reverse ? 1 : -1;
+
+        return function (a, b) {
+            return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+        } 
+    }
+    
+    $.fn.writeTeam = function (parameters) {
+        /// <summary>Realiza a escrita de uma equipe via JSON</summary>
+        /// <param name="parameters" type="Object">Objeto com propriedades de parametro</param>        
         var deferred = $.Deferred();
 
+        parameters = $.extend({ id: "", file: "", sortBy: "name", reverse: false, primer: function(a){return a.toUpperCase()} }, parameters);
+        
         $(document).blockUI();
 
-        $.getJSON(fileName)
+        $.getJSON(parameters.file)
         .done(function(items) {		
-            var itemsOrdered = items.sort(sort_by('name', false, function(a){return a.toUpperCase()}));
+            var itemsOrdered = items.sort(sort_by(parameters.sortBy, parameters.reverse, parameters.primer));
     
-            var html = "";
-            
-            $.each(itemsOrdered, function(index, item) {
-                html = html + 
-                        "<div class='message-item'>"+
-                            "<div class='message-inner'>"+
-                                "<div class='message-head clearfix'>"+
-                                    "<div class='avatar pull-left'><img src='" + item.image + "' class='img-thumbnail img-responsive'></div>"+
-                                    "<div class='user-detail'>"+
-                                        "<h5 class='handle'>" + item.name + "</h5>"+
-                                        "<div class='post-meta'>"+
-                                            "<div class='asker-meta'>"+
-                                                "<span class='qa-message-what'>" + item.detail + "</span>"+
-                                                "<br />"+
-                                            "</div>";
-                                                    
-                                            if( item.lattes!= "")
-                                            {
-                                                html = html + 
-                                                "<span class='qa-message-who'>"+
-                                                    "<span class='qa-message-who-data'><a href='"+ item.lattes + "' target='_blank'><img src='images/lattes2.png' alt='Lattes' border='0'></a></span>"+
-                                                "</span>";
-                                            }
-                html = html + 
+            var html = "";            
+            $.each(itemsOrdered, function(index, item) {                
+                if(item.name != "")
+                {
+                    html = html + 
+                            "<div class='message-item'>"+
+                                "<div class='message-inner'>"+
+                                    "<div class='message-head clearfix'>"+
+                                        "<div class='avatar pull-left'><img src='" + item.image + "' class='img-thumbnail img-responsive'></div>"+
+                                        "<div class='user-detail'>"+
+                                            "<h5 class='handle'>" + item.name + "</h5>"+
+                                            "<div class='post-meta'>"+
+                                                "<div class='asker-meta'>"+
+                                                    "<span class='qa-message-what'>" + item.detail + "</span>"+
+                                                    "<br />"+
+                                                "</div>";
+
+                                                if( item.lattes!= "")
+                                                {
+                                                    html = html + 
+                                                    "<span class='qa-message-who'>"+
+                                                        "<span class='qa-message-who-data'><a href='"+ item.lattes + "' target='_blank'><img src='images/lattes2.png' alt='Lattes' border='0'></a></span>"+
+                                                    "</span>";
+                                                }
+                    html = html + 
+                                            "</div>"+
                                         "</div>"+
                                     "</div>"+
+                                    "<div class='qa-message-content'>" +
+                                            item.description +
+                                    "</div>"+
                                 "</div>"+
-                                "<div class='qa-message-content'>" +
-                                        item.description +
-                                "</div>"+
-                            "</div>"+
-                        "</div>";
+                            "</div>";
+                }
             });	
                         
-            $("#"+ id).append(html);
+            $("#"+ parameters.id).append(html);
             $(document).unblockUI();
             deferred.resolve();
         })
