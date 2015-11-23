@@ -2645,11 +2645,13 @@ table {
 
 }
 
-
-
-
-
-
+/*
+* Timeline
+*/
+.avatar{
+    max-height: 90px;
+    max-width: 70px;    
+}
 
 .message-item {
     margin-bottom: 25px;

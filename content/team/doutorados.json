@@ -8,21 +8,21 @@
     },
     {
 	"name": "Giovani Guizzo", 
-        "image": "images/team/giovani.png",
+        "image": "images/team/giovani_guizzo.jpg",
         "detail": "Ingresso 2014-2",
         "lattes": "http://lattes.cnpq.br/7715481346852005",
         "description": ""
     },
     {
 	"name": "Thainá Mariani", 
-        "image": "images/team/mulher.gif",
+        "image": "images/team/thaina_mariani.jpg",
         "detail": "Ingresso 2015-1",
         "lattes": "http://lattes.cnpq.br/0564933529322298",
         "description": "Doutoranda em Informática pela Universidade Federal do Paraná (UFPR). Mestre em Informática pela Universidade Federal do Paraná (UFPR) e graduada em Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Tecnológica Federal do Paraná (UTFPR). Possui experiência e interesse na área de Engenharia de Software e Inteligência Artificial, com foco em Engenharia de Software Baseada em Busca."
     },
     {
 	"name": "Thiago Nascimento Ferreira", 
-        "image": "images/team/homem.gif",
+        "image": "images/team/thiago_ferreira.jpg",
         "detail": "Ingresso 2015-1",
         "lattes": "",
         "description": ""

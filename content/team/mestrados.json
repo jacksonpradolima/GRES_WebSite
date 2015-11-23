@@ -3,7 +3,14 @@
         "name": "Jackson Antonio do Prado Lima", 
         "image": "images/team/jackson.png",
         "detail": "Ingresso 2015-1",
-        "lattes": "",
-        "description": ""
+        "lattes": "http://lattes.cnpq.br/3457149082225309",
+        "description": "Possui graduação em Bacharelado em Sistemas de Informação pela Universidade do Estado de Santa Catarina (2014). Atualmente é mestrando em Informática pela Universidade Federal do Paraná (2015). Tem experiência e interesse na área de Ciência da Computação, com ênfase em Engenharia de Software e Inteligência Artificial (Computação Bio-Insipirada), atuando principalmente nos seguintes temas: teste de software, teste de linha de produto de sofwtare, otimização multi-objetivo, engenharia de software baseada em busca, análise de mutantes."
+    },
+    {
+        "name": "Vinicius Renan de Carvalho", 
+        "image": "images/team/vinicius_carvalho.jpg",
+        "detail": "Ingresso 2014-1",
+        "lattes": "http://lattes.cnpq.br/5189402459527533",
+        "description": "Possui graduação em Sistemas de Informação pela Universidade do Oeste Paulista (2012), atualmente participa do programa de pós graduação do departamento de Informática da UFPR como aluno de mestrado."
     }
 ]
